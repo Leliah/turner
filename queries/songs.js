@@ -11,7 +11,7 @@ const getAllSongs = async () => {
   };
 
 
-//RETURN ONE SONG FROM DB
+//RETURN ONE SONG FROM DB //
 const getSong = async (id) => {
     try {
         const oneSong = await db.one("SELECT * FROM songs WHERE id=$1", id);
